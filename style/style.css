@@ -5,7 +5,8 @@ body {margin: 0%;
     font-family: 'Poppins', sans-serif;}
 main {margin: 3em;}
         /* ---- Cover Section ---- */
-.cover-section {background-color: navy;
+.cover-section {margin: 0%;
+    background-color: navy;
     border-radius: 10px;
     color: white;
     display: flex;
@@ -16,14 +17,16 @@ main {margin: 3em;}
 .cover-title {padding: 20px;
     margin-top: 8em;
     margin-left: 5em;}
-.cover-title h1{font-size: 40px;}
+.cover-title h1{font-size: 35px;}
 .cover-title a {text-decoration: none;
     background-color: white;
     border-radius: 5px;
     padding: 5px 10px;
     font-weight: bold;
     color: darkslategrey;}
-.cover-photo img {width: 100%;}
+.cover-photo{padding-bottom: 0;}
+.cover-photo img {
+    width: 100%;}
         /* ---- Manu ---- */
 .manu {background-color: navy;
     border-radius: 10px;
@@ -100,7 +103,7 @@ main {margin: 3em;}
 .footer-section .social-logo img {height: 40px;
     margin: 10px;}
         /* ---- Mobile view ---- */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 300px) and (max-width: 576px) {
     .cover {grid-template-columns: repeat(1, 1fr)}
     main {margin: 1em;}
     .blog-section {margin-top: 20px}
@@ -118,26 +121,19 @@ main {margin: 3em;}
     main {margin: 3em;}
     .container {display:grid;
     grid-template-columns: repeat(1, 1fr);}
-    .manu {
-        border-radius: 10px;
+    .manu {border-radius: 10px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);}
-    .manu a {align-items: center;
-    }
+    .manu a {align-items: center;}
     .manu, .blog {width: auto;}
     .blogs {grid-template-columns: repeat(2, 1fr);}
-    .blog
-    .blog-7, .blog-8, .blog-9{display: none;}
     .footer-item {
-        grid-template-columns: repeat(4, 1fr);
-        }
-}
+        grid-template-columns: repeat(4, 1fr);}}
         /* ---- Desktop view ---- */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
     .container {grid-template-columns: repeat(2, 1fr);}
     .blogs {grid-template-columns: repeat(3, 1fr)};
-    .manu, .blog {width: auto;}
-}
+    .manu, .blog {width: auto;}}
 
 
 
